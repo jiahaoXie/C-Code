@@ -1,0 +1,4 @@
+﻿  main.cpp
+f:\研究生学习 代码\vs 2015代码\heloworld\heloworld\main.cpp(7): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  heloworld.vcxproj -> F:\研究生学习 代码\vs 2015代码\heloworld\Debug\heloworld.exe
+  heloworld.vcxproj -> F:\研究生学习 代码\vs 2015代码\heloworld\Debug\heloworld.pdb (Full PDB)

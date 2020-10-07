@@ -1,0 +1,40 @@
+﻿  源.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(893): error C3848: 具有类型“const MyGreater”的表达式会丢失一些 const-volatile 限定符以调用“bool MyGreater::operator ()(int,int)”
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(890): note: 参见对正在编译的函数 模板 实例化“bool std::_Debug_lt_pred<const MyGreater&,const int&,const int&>(_Pr,_Ty1,_Ty2,std::_Dbfile_t,std::_Dbline_t) noexcept(<expr>)”的引用
+          with
+          [
+              _Pr=const MyGreater &,
+              _Ty1=const int &,
+              _Ty2=const int &
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtree(2046): note: 编译类 模板 成员函数“bool std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Compare(const int &,const int &) const”时
+          with
+          [
+              _Kty=int,
+              _Ty=int,
+              _Pr=MyGreater,
+              _Alloc=std::allocator<std::pair<const int,int>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtree(2064): note: 参见对正在编译的函数 模板 实例化“bool std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::_Compare(const int &,const int &) const”的引用
+          with
+          [
+              _Kty=int,
+              _Ty=int,
+              _Pr=MyGreater,
+              _Alloc=std::allocator<std::pair<const int,int>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\map(73): note: 参见对正在编译的类 模板 实例化“std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>”的引用
+          with
+          [
+              _Kty=int,
+              _Ty=int,
+              _Pr=MyGreater,
+              _Alloc=std::allocator<std::pair<const int,int>>
+          ]
+  g:\研究生学习\stl(vector list deque )\map\源.cpp(17): note: 参见对正在编译的类 模板 实例化“std::map<int,int,MyGreater,std::allocator<std::pair<const _Kty,_Ty>>>”的引用
+          with
+          [
+              _Kty=int,
+              _Ty=int
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(893): error C2056: 非法表达式
